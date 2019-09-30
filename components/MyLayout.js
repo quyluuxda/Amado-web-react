@@ -9,11 +9,18 @@ class Layout extends React.Component {
         super(props);
         this.state = {
             isShowForm: false,
+            isShowNav: false,
         };
     }
     handleToogleForm = () => {
         this.setState({
             isShowForm: !this.state.isShowForm,
+        })
+    }
+
+    handleNav = () => {
+        this.setState({
+            isShowNav: !this.state.isShowNav,
         })
     }
 
@@ -23,23 +30,35 @@ class Layout extends React.Component {
         })
     }
 
+    closeNav = () => {
+        this.setState({
+            isShowNav: !this.state.isShowNav,
+        })
+    }
+
     render() {
-        let { isShowForm } = this.state
+        let { isShowForm, isShowNav } = this.state
         let ElmForm = null
+        let showHideNav = "header-area clearfix"
         let showHideSearch = null
         if (isShowForm) {
-            ElmForm = <Search onClickClose={this.closeForm} />
             showHideSearch = "search-wrapper-on"
+        }
+        if (isShowNav) {
+            showHideNav = "header-area clearfix bp-xs-on"
         }
         return (
             <div className={showHideSearch}>
                 <div >
-                    {ElmForm}
+                <Search onClickClose={this.closeForm} />
                 </div>
                 <div className="main-content-wrapper d-flex clearfix">
-                    <MobileNav />
-                    <Header
+                    <MobileNav
+                        onClickNav={this.handleNav}
+                    />
+                    <Header onClickClose={this.closeNav}
                         onClickToggleSearch={this.handleToogleForm}
+                        showHideNav = {showHideNav}
                     />
                     {this.props.children}
                 </div>

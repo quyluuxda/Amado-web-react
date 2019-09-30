@@ -10,10 +10,15 @@ class Header extends React.Component {
     toggleSearch=()=>{
         this.props.onClickToggleSearch()
     }
+
+    closeNav=(value)=>{
+        this.props.onClickClose(value)
+    }
+
     render() {
         return (
-            <header className="header-area clearfix">
-                <div className="nav-close">
+            <header className={this.props.showHideNav}>
+                <div onClick={this.closeNav} className="nav-close">
                     <i className="fa fa-close" aria-hidden="true" />
                 </div>
                 <div className="logo">

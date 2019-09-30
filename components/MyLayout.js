@@ -4,42 +4,42 @@ import Header from './Header';
 import Subscribe from './Subscribe';
 import Footer from './Footer';
 
-// const Layout = props => (
-//     <body>
-//         <div className="search-wrapper section-padding-100">
-//             <Search />
-//         </div>
-//         <div className="main-content-wrapper d-flex clearfix">
-//             <MobileNav />
-//             <Header />
-//             {props.children}
-//         </div>
-//         <Subscribe />
-//         <Footer />
-//     </body>
-// );
-
 class Layout extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            showHideSearch: "search-wrapper-on",
+            isShowForm: false,
         };
-        // this.handleClick = this.handleClick.bind(this);
     }
-    
+    handleToogleForm = () => {
+        this.setState({
+            isShowForm: !this.state.isShowForm,
+        })
+    }
+
+    closeForm = () => {
+        this.setState({
+            isShowForm: !this.state.isShowForm,
+        })
+    }
+
     render() {
-        const { showHideSearch } = this.state
+        let { isShowForm } = this.state
+        let ElmForm = null
+        let showHideSearch = null
+        if (isShowForm) {
+            ElmForm = <Search onClickClose={this.closeForm} />
+            showHideSearch = "search-wrapper-on"
+        }
         return (
-            <div className={this.state.showHideSearch}>
-                <div className="search-wrapper section-padding-100">
-                    <Search />
+            <div className={showHideSearch}>
+                <div >
+                    {ElmForm}
                 </div>
                 <div className="main-content-wrapper d-flex clearfix">
                     <MobileNav />
-                    <Header 
-                    showHideSearch = {showHideSearch}
-                    // toggleSearch={this.toggleSearch.bind(this)}
+                    <Header
+                        onClickToggleSearch={this.handleToogleForm}
                     />
                     {this.props.children}
                 </div>

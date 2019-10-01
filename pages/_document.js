@@ -11,8 +11,8 @@ class MyDocument extends Document {
       <Html>
         <Head>
         <title>Amado - Furniture Ecommerce</title>
-        <link rel="icon" type="image/x-icon" href="static/img/core-img/favicon.ico" />
-        <link href="static/font-awesome.min.css" rel="stylesheet" />
+        <link rel="icon" type="image/x-icon" href="/static/img/core-img/favicon.ico" />
+        <link href="/static/font-awesome.min.css" rel="stylesheet" />
         </Head>
         <body>
           <Main />

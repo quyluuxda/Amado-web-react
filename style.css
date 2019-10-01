@@ -1261,7 +1261,7 @@
       right: 0;
       line-height: 1;
       width: 30px;
-      height: 25px;
+      height: 20px;
       text-align: center;
       cursor: pointer;
       color: #959595;
@@ -1986,5 +1986,96 @@
   cursor: pointer;
 }
 
+/* .form-q {
+  margin: 0 auto;
+  padding: 100px 30px 0;
+}
+
+  @media(min-width: 800px) {
+    .form-q{
+    max-width: 60%;
+  }
+} */
+.form-q {
+  margin-top: 50px;
+}
+.input-range__label{
+  font-family: "helveticaneuemedium"!important;
+  color: #959595
+}
+.product-sorting form select{
+  font-size:14px;
+  padding-left: 5px;
+  outline: none;
+}
+
+
+/* custom select */
+/* The container must be positioned relative: */
+.product-sorting form select option{
+  font-size: 14px!important;
+  text-transform: none!important;
+}
+
+.q-product .fa{
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.q-product .fa-caret-up:before {
+  content: "\f0d8";
+}
+
+.q-product .fa-caret-down:before {
+  content: "\f0d7";
+}
+
+/* carousel */
+.slide-container {
+  width: 80%;
+  margin: auto; }
+
+h3 {
+  text-align: center; }
+
+.each-slide > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  height: 300px;
+}
+
+.each-slide span {
+  padding: 20px;
+  font-size: 20px;
+  background: #efefef;
+  text-align: center;
+}
+
+.each-fade {
+  display: flex;
+}
+
+.each-fade .image-container {
+  width: 75%;
+  overflow: hidden;
+}
+
+.each-fade .image-container img {
+  width: 100%;
+}
+
+.each-fade h2 {
+  width: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  background: #adceed;
+}
     /* ##### The End ##### */
     /*# sourceMappingURL=style.css.map */

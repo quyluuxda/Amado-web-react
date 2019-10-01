@@ -6,7 +6,7 @@ const Footer = () => (
                 <div className="col-12 col-lg-4">
                     <div className="single_widget_area">
                         <div className="footer-logo mr-50">
-                            <a href="index.html"><img src="static/img/core-img/logo2.png" alt="true" /></a>
+                            <a href="index.html"><img src="/static/img/core-img/logo2.png" alt="true" /></a>
                         </div>
                         <p className="copywrite" >
                             Copyright &copy; 2019 All rights reserved | This template is made with <i className="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> & Re-distributed by <a href="https://themewagon.com/" target="_blank">Themewagon</a>

@@ -24,7 +24,7 @@ const CartItems = () => (
                         <div className="qty-btn d-flex">
                             <p>Qty</p>
                             <div className="quantity">
-                                <span className="qty-minus" onclick="var effect = document.getElementById('qty2'); var qty = effect.value; if( !isNaN( qty ) && qty > 1 ) effect.value--;return false;"><i className="fa fa-minus" aria-hidden="true" /></span>
+                                <span className="qty-minus" onClick="var effect = document.getElementById('qty2'); var qty = effect.value; if( !isNaN( qty ) && qty > 1 ) effect.value--;return false;"><i className="fa fa-minus" aria-hidden="true" /></span>
                                 <input type="number" className="qty-text" id="qty2" step={1} min={1} max={300} name="quantity" defaultValue={1} />
                                 <span className="qty-plus" onclick="var effect = document.getElementById('qty2'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i className="fa fa-plus" aria-hidden="true" /></span>
                             </div>
@@ -68,7 +68,7 @@ const CartItems = () => (
                             <div className="quantity">
                                 <span className="qty-minus" onclick="var effect = document.getElementById('qty2'); var qty = effect.value; if( !isNaN( qty ) && qty > 1 ) effect.value--;return false;"><i className="fa fa-minus" aria-hidden="true" /></span>
                                 <input type="number" className="qty-text" id="qty2" step={1} min={1} max={300} name="quantity" defaultValue={1} />
-                                <span className="qty-plus" onclick="var effect = document.getElementById('qty2'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i className="fa fa-plus" aria-hidden="true" /></span>
+                                <span className="qty-plus" onlick="var effect = document.getElementById('qty2'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i className="fa fa-plus" aria-hidden="true" /></span>
                             </div>
                         </div>
                     </td>

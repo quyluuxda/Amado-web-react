@@ -1,12 +1,11 @@
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
-import "../style.css"
-import './_document'
-import Layout from '../components/MyLayout'
-import Product from '../comps-product/Product'
+import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
+import "../../style.css"
+import '../_document'
+import Layout from '../../components/MyLayout'
+import MyCarousel from "../../comps-shop/My Carousel"
 const Product = () => (
     <Layout>
-
-        <div className="single-product-area section-padding-100 clearfix">
+        <div className="single-product-area section-padding-100-0 clearfix">
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-12">
@@ -22,22 +21,22 @@ const Product = () => (
                 </div>
                 <div className="row">
                     <div className="col-12 col-lg-7">
-                        <div className="single_product_thumb">
+                        {/* <div className="single_product_thumb">
                             <div id="product_details_slider" className="carousel slide" data-ride="carousel">
                                 <ol className="carousel-indicators">
-                                    <li className="active" data-target="#product_details_slider" data-slide-to={0} style={{ backgroundImage: 'url(static/img/product-img/pro-big-1.jpg)' }}>
+                                    <li className="active" data-target="#product_details_slider" data-slide-to={0} style={{ backgroundImage: 'url(../static/img/product-img/pro-big-1.jpg)' }}>
                                     </li>
-                                    <li data-target="#product_details_slider" data-slide-to={1} style={{ backgroundImage: 'url(static/img/product-img/pro-big-2.jpg)' }}>
+                                    <li data-target="#product_details_slider" data-slide-to={1} style={{ backgroundImage: 'url(../static/img/product-img/pro-big-2.jpg)' }}>
                                     </li>
-                                    <li data-target="#product_details_slider" data-slide-to={2} style={{ backgroundImage: 'url(static/img/product-img/pro-big-3.jpg)' }}>
+                                    <li data-target="#product_details_slider" data-slide-to={2} style={{ backgroundImage: 'url(../static/img/product-img/pro-big-3.jpg)' }}>
                                     </li>
-                                    <li data-target="#product_details_slider" data-slide-to={3} style={{ backgroundImage: 'url(static/img/product-img/pro-big-4.jpg)' }}>
+                                    <li data-target="#product_details_slider" data-slide-to={3} style={{ backgroundImage: 'url(../static/img/product-img/pro-big-4.jpg)' }}>
                                     </li>
                                 </ol>
                                 <div className="carousel-inner">
                                     <div className="carousel-item active">
-                                        <a className="gallery_img" href="static/img/product-img/pro-big-1.jpg">
-                                            <img className="d-block w-100" src="static/img/product-img/pro-big-1.jpg" alt="First slide" />
+                                        <a className="gallery_img" href="../static/img/product-img/pro-big-1.jpg">
+                                            <img className="d-block w-100" src="../static/img/product-img/pro-big-1.jpg" alt="First slide" />
                                         </a>
                                     </div>
                                     <div className="carousel-item">
@@ -57,7 +56,8 @@ const Product = () => (
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </div> */}
+                        <MyCarousel/>
                     </div>
                     <div className="col-12 col-lg-5">
                         <div className="single_product_desc">
@@ -88,9 +88,9 @@ const Product = () => (
                                 <div className="cart-btn d-flex mb-50">
                                     <p>Qty</p>
                                     <div className="quantity">
-                                        <span className="qty-minus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty ) && qty > 1 ) effect.value--;return false;"><i className="fa fa-caret-down" aria-hidden="true" /></span>
+                                        <span className="qty-minus q-product"><i className="fa fa-caret-down" aria-hidden="true" /></span>
                                         <input type="number" className="qty-text" id="qty" step={1} min={1} max={300} name="quantity" defaultValue={1} />
-                                        <span className="qty-plus" onclick="var effect = document.getElementById('qty'); var qty = effect.value; if( !isNaN( qty )) effect.value++;return false;"><i className="fa fa-caret-up" aria-hidden="true" /></span>
+                                        <span className="qty-plus q-product"><i className="fa fa-caret-up" aria-hidden="true" /></span>
                                     </div>
                                 </div>
                                 <button type="submit" name="addtocart" value={5} className="btn amado-btn">Add to cart</button>
@@ -100,9 +100,6 @@ const Product = () => (
                 </div>
             </div>
         </div>
-
-        );
-        
     </Layout>
 );
 

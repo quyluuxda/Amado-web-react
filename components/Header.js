@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { loadGetInitialProps } from 'next/dist/next-server/lib/utils';
+
 class Header extends React.Component {
     constructor(props) {
         super(props);

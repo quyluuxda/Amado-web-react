@@ -1,6 +1,6 @@
 import Link from 'next/link';
 const ShopItems = () => (
-  <div className="amado_product_area section-padding-100">
+  <div className="amado_product_area section-padding-100-0">
     <div className="container-fluid">
       <div className="row">
         <div className="col-12">
@@ -48,7 +48,7 @@ const ShopItems = () => (
           <div className="single-product-wrapper">
 
             <div className="product-img">
-              <Link href="/product/[id]" as={`/product/abc`}>
+              <Link href="/shop/[id]" as={`/shop/abc`}>
                 <img src="static/img/product-img/product1.jpg" alt="true" />
               </Link>
             </div>

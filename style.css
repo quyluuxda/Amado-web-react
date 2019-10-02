@@ -38,6 +38,9 @@
     body {
       font-family: "helveticaneuemedium";
       font-size: 16px;
+      max-width: 1366px;
+      margin: 0 auto;
+      border: solid 1px rgb(231, 231, 231);
     }
 
     h1, h2, h3, h4, h5, h6 {
@@ -408,6 +411,12 @@
       background-color: #fbb710;
       font-weight: 400;
     }
+    @media(max-width:500px){
+      .amado-btn{
+        margin-bottom: 20px;
+      }
+    }
+
 
     .amado-btn.active, .amado-btn:hover, .amado-btn:focus {
       font-size: 18px;
@@ -509,6 +518,7 @@
       max-width: 320px;
       background-color: #fff;
       padding: 60px 75px;
+      overflow-x: hidden;
     }
 
     @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -2033,49 +2043,7 @@
   content: "\f0d7";
 }
 
-/* carousel */
-.slide-container {
-  width: 80%;
-  margin: auto; }
 
-h3 {
-  text-align: center; }
-
-.each-slide > div {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-size: cover;
-  height: 300px;
-}
-
-.each-slide span {
-  padding: 20px;
-  font-size: 20px;
-  background: #efefef;
-  text-align: center;
-}
-
-.each-fade {
-  display: flex;
-}
-
-.each-fade .image-container {
-  width: 75%;
-  overflow: hidden;
-}
-
-.each-fade .image-container img {
-  width: 100%;
-}
-
-.each-fade h2 {
-  width: 25%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  background: #adceed;
-}
     /* ##### The End ##### */
     /*# sourceMappingURL=style.css.map */
+

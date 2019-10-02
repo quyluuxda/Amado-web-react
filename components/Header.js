@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Menu from './Menu'
 import { loadGetInitialProps } from 'next/dist/next-server/lib/utils';
 
 class Header extends React.Component {
@@ -17,29 +18,20 @@ class Header extends React.Component {
     }
 
     render() {
+        
         return (
             <header className={this.props.showHideNav}>
                 <div onClick={this.closeNav} className="nav-close">
                     <i className="fa fa-close" aria-hidden="true" />
                 </div>
                 <div className="logo">
-                    <a href="index.html"><img src="/static/img/core-img/logo.png" alt="true" /></a>
+                    <Link href="/"><img src="/static/img/core-img/logo.png" alt="true" /></Link>
                 </div>
                 <nav className="amado-nav">
-                    <ul>
-                        <Link href="/">
-                            <li className="active"><a>Home</a></li>
-                        </Link>
-                        <Link href="/shop">
-                            <li><a>Shop</a></li>
-                        </Link>
-                        <Link href="/cart">
-                            <li><a>Cart</a></li>
-                        </Link>
-                        <Link href="/checkout">
-                            <li><a>Checkout</a></li>
-                        </Link>
-                    </ul>
+                    {/* <ul>
+                        {menuItems}
+                    </ul> */}
+                    <Menu/>
                 </nav>
                 <div className="amado-btn-group mt-30 mb-100">
                     <a href="#" className="btn amado-btn mb-15">%Discount%</a>

@@ -411,12 +411,12 @@
       background-color: #fbb710;
       font-weight: 400;
     }
-    @media(max-width:500px){
-      .amado-btn{
+
+    @media(max-width:500px) {
+      .amado-btn {
         margin-bottom: 20px;
       }
     }
-
 
     .amado-btn.active, .amado-btn:hover, .amado-btn:focus {
       font-size: 18px;
@@ -587,6 +587,7 @@
     .main-content-wrapper .header-area .logo {
       margin-bottom: 100px;
       display: block;
+      cursor: pointer;
     }
 
     .main-content-wrapper .header-area .amado-nav li a {
@@ -1983,20 +1984,21 @@
       border-radius: 0;
       background-color: #f5f7fa;
     }
-.amado-pro-catagory 
-.single-products-catagory{
-  padding: 0;
-  align-content: center;
-}
 
-.amado-nav ul li a{
-  cursor: pointer;
-}
-#footerNavContent ul li a{
-  cursor: pointer;
-}
+    .amado-pro-catagory .single-products-catagory {
+      padding: 0;
+      align-content: center;
+    }
 
-/* .form-q {
+    .amado-nav ul li a {
+      cursor: pointer;
+    }
+
+    #footerNavContent ul li a {
+      cursor: pointer;
+    }
+
+    /* .form-q {
   margin: 0 auto;
   padding: 100px 30px 0;
 }
@@ -2006,44 +2008,75 @@
     max-width: 60%;
   }
 } */
-.form-q {
-  margin-top: 50px;
-}
-.input-range__label{
-  font-family: "helveticaneuemedium"!important;
-  color: #959595
-}
-.product-sorting form select{
-  font-size:14px;
-  padding-left: 5px;
-  outline: none;
-}
 
+    .form-q {
+      margin-top: 50px;
+    }
 
-/* custom select */
-/* The container must be positioned relative: */
-.product-sorting form select option{
-  font-size: 14px!important;
-  text-transform: none!important;
-}
+    .input-range__label {
+      font-family: "helveticaneuemedium"!important;
+      color: #959595
+    }
 
-.q-product .fa{
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-.q-product .fa-caret-up:before {
-  content: "\f0d8";
-}
+    .product-sorting form select {
+      font-size: 14px;
+      padding-left: 5px;
+      outline: none;
+    }
 
-.q-product .fa-caret-down:before {
-  content: "\f0d7";
-}
+    /* custom select */
 
+    /* The container must be positioned relative: */
+
+    .product-sorting form select option {
+      font-size: 14px!important;
+      text-transform: none!important;
+    }
+
+    .q-product .fa {
+      display: inline-block;
+      font: normal normal normal 14px/1 FontAwesome;
+      font-size: inherit;
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .q-product .fa-caret-up:before {
+      content: "\f0d8";
+    }
+
+    .q-product .fa-caret-down:before {
+      content: "\f0d7";
+    }
+
+    /*  footer  */
+
+    #footerNavContent .navbar-nav {
+      margin-left: auto;
+    }
+
+    @media (max-width: 991px) {
+      .navbar-expand-lg .navbar-collapse {
+        display: block;
+        margin-top: 20px;
+      }
+      #footerNavContent .navbar-nav .nav-item {
+        display: block;
+      }
+      #footerNavContent .navbar-nav .nav-link {
+        padding: 5px 10px;
+      }
+      #footerNavContent .navbar-nav {
+        margin: 0 auto;
+        display: -ms-flexbox!important;
+        display: flex!important;
+        flex-direction: row;
+        align-content:space-between;
+      }
+     
+    }
 
     /* ##### The End ##### */
-    /*# sourceMappingURL=style.css.map */
 
+    /*# sourceMappingURL=style.css.map */

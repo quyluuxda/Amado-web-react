@@ -17,18 +17,14 @@ const Footer = () => (
                     <div className="single_widget_area">
                         <div className="footer_menu">
                             <nav className="navbar navbar-expand-lg justify-content-end">
-                                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#footerNavContent" aria-controls="footerNavContent" aria-expanded="false" aria-label="Toggle navigation"><i className="fa fa-bars" /></button>
                                 <div className="collapse navbar-collapse" id="footerNavContent">
-                                    <ul className="navbar-nav ml-auto">
+                                    <ul className="navbar-nav">
                                         <Link href="/">
-                                            <li className="nav-item active"><a className="nav-link">Home</a></li>
+                                            <li className="nav-item"><a className="nav-link">Home</a></li>
                                         </Link>
                                         <Link href="/shop">
                                             <li className="nav-item"><a className="nav-link">Shop</a></li>
                                         </Link>
-                                        {/* <Link href="/product">
-                                            <li className="nav-item"><a className="nav-link">Product</a></li>
-                                        </Link> */}
                                         <Link href="/cart">
                                             <li className="nav-item"><a className="nav-link">Cart</a></li>
                                         </Link>

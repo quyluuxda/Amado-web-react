@@ -80,7 +80,7 @@ class MyCarousel extends Component {
           {
             `.custom-tag {
                 max-width: 100%;
-                height: 500px;
+                height: 580px;
                 object-fit: cover;
               }
               @media(max-width:500px){

@@ -10,7 +10,6 @@ class MyDocument extends Document {
     return (
       <Html>
         <Head>
-        <title>Amado - Furniture Ecommerce</title>
         <link rel="icon" type="image/x-icon" href="/static/img/core-img/favicon.ico" />
         <link href="/static/font-awesome.min.css" rel="stylesheet" />
         </Head>

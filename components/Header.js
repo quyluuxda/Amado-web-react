@@ -28,9 +28,6 @@ class Header extends React.Component {
                     <Link href="/"><img src="/static/img/core-img/logo.png" alt="true" /></Link>
                 </div>
                 <nav className="amado-nav">
-                    {/* <ul>
-                        {menuItems}
-                    </ul> */}
                     <Menu/>
                 </nav>
                 <div className="amado-btn-group mt-30 mb-100">

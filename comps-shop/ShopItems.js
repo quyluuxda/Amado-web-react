@@ -1,6 +1,6 @@
 import Link from 'next/link';
 const ShopItems = () => (
-  <div className="amado_product_area section-padding-100-0">
+  <div className="amado_product_area section-padding-100">
     <div className="container-fluid">
       <div className="row">
         <div className="col-12">
@@ -48,7 +48,7 @@ const ShopItems = () => (
           <div className="single-product-wrapper">
 
             <div className="product-img">
-              <Link href="/shop/[id]" as={`/shop/abc`}>
+              <Link href="/shop/[id]" as={`/shop/1`}>
                 <img src="static/img/product-img/product1.jpg" alt="true" />
               </Link>
             </div>
@@ -83,7 +83,9 @@ const ShopItems = () => (
           <div className="single-product-wrapper">
 
             <div className="product-img">
-              <img src="static/img/product-img/product2.jpg" alt="true" />
+              <Link href="/shop/[id]" as={`/shop/2`}>
+                <img src="static/img/product-img/product2.jpg" alt="true" />
+              </Link>
             </div>
 
 
@@ -117,7 +119,9 @@ const ShopItems = () => (
           <div className="single-product-wrapper">
 
             <div className="product-img">
-              <img src="static/img/product-img/product3.jpg" alt="true" />
+              <Link href="/shop/[id]" as={`/shop/3`}>
+                <img src="static/img/product-img/product3.jpg" alt="true" />
+              </Link>
             </div>
 
             <div className="product-description d-flex align-items-center justify-content-between">
@@ -151,42 +155,9 @@ const ShopItems = () => (
           <div className="single-product-wrapper">
 
             <div className="product-img">
-              <img src="static/img/product-img/product4.jpg" alt="true" />
-            </div>
-
-
-            <div className="product-description d-flex align-items-center justify-content-between">
-
-              <div className="product-meta-data">
-                <div className="line"></div>
-                <p className="product-price">$180</p>
-                <a href="product-details.html">
-                  <h6>Modern Chair</h6>
-                </a>
-              </div>
-
-              <div className="ratings-cart text-right">
-                <div className="ratings">
-                  <i className="fa fa-star" aria-hidden="true"></i>
-                  <i className="fa fa-star" aria-hidden="true"></i>
-                  <i className="fa fa-star" aria-hidden="true"></i>
-                  <i className="fa fa-star" aria-hidden="true"></i>
-                  <i className="fa fa-star" aria-hidden="true"></i>
-                </div>
-                <div className="cart">
-                  <a href="cart.html" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="static/img/core-img/cart.png" alt="true" /></a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div className="col-12 col-sm-6 col-md-12 col-xl-6">
-          <div className="single-product-wrapper">
-
-            <div className="product-img">
-              <img src="static/img/product-img/product5.jpg" alt="true" />
+              <Link href="/shop/[id]" as={`/shop/4`}>
+                <img src="static/img/product-img/product4.jpg" alt="true" />
+              </Link>
             </div>
 
 
@@ -221,7 +192,46 @@ const ShopItems = () => (
           <div className="single-product-wrapper">
 
             <div className="product-img">
-              <img src="static/img/product-img/product6.jpg" alt="true" />
+              <Link href="/shop/[id]" as={`/shop/5`}>
+                <img src="static/img/product-img/product5.jpg" alt="true" />
+              </Link>
+            </div>
+
+
+            <div className="product-description d-flex align-items-center justify-content-between">
+
+              <div className="product-meta-data">
+                <div className="line"></div>
+                <p className="product-price">$180</p>
+                <a href="product-details.html">
+                  <h6>Modern Chair</h6>
+                </a>
+              </div>
+
+              <div className="ratings-cart text-right">
+                <div className="ratings">
+                  <i className="fa fa-star" aria-hidden="true"></i>
+                  <i className="fa fa-star" aria-hidden="true"></i>
+                  <i className="fa fa-star" aria-hidden="true"></i>
+                  <i className="fa fa-star" aria-hidden="true"></i>
+                  <i className="fa fa-star" aria-hidden="true"></i>
+                </div>
+                <div className="cart">
+                  <a href="cart.html" data-toggle="tooltip" data-placement="left" title="Add to Cart"><img src="static/img/core-img/cart.png" alt="true" /></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div className="col-12 col-sm-6 col-md-12 col-xl-6">
+          <div className="single-product-wrapper">
+
+            <div className="product-img">
+              <Link href="/shop/[id]" as={`/shop/6`}>
+                <img src="static/img/product-img/product6.jpg" alt="true" />
+              </Link>
             </div>
 
 

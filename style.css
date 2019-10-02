@@ -183,6 +183,10 @@
       padding-top: 50px;
       padding-bottom: 50px;
     }
+    .section-padding-100{
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
 
     .section-padding-100-0 {
       padding-top: 100px;
@@ -2076,7 +2080,13 @@
       }
      
     }
+.row{
+  margin-right: 0;
+}
 
+.product-img{
+  cursor: pointer;
+}
     /* ##### The End ##### */
 
     /*# sourceMappingURL=style.css.map */
